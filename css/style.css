@@ -6,6 +6,10 @@
     box-sizing: border-box; /* Include il padding e i bordi nelle dimensioni degli elementi */
   }
 
+body {
+  font-family: sans-serif;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -16,6 +20,16 @@ p {
   padding-top: 20px;
   text-align: center;
   line-height: 2;
+}
+
+main p {
+  text-align: left;
+  padding-top: 20px;
+}
+
+main h2 {
+  text-align: left;
+  font-size: 36px;
 }
 
 h1 {
@@ -48,10 +62,7 @@ ul {
 
 .row {
   display: flex;
-}
-
-.row > div {
-  border: 1px dashed black;
+  align-items: center;
 }
 
 .col-70 {
@@ -59,11 +70,11 @@ ul {
 }
 
 .col-60 {
-  width: 60%;
+
 }
 
 .col-40 {
-  width: 40%;
+
 }
 
 .col-30 {
@@ -100,6 +111,10 @@ button {
 .button-xs {
   font-size: 0.8rem;
 }
+
+main img {
+
+}
   
     /* HEADER */
 .page-header {
@@ -112,13 +127,12 @@ button {
   margin-bottom: 20px;
 }
 .navbar-header > .container {
-display: flex;
+  display: flex;
 }
 
 .header-link {
   text-decoration: none;
   text-align: center;
-  border: 1px dashed black;
   margin: 10px 0;
   padding: 5px 0;
   flex-grow: 1;
@@ -127,7 +141,6 @@ display: flex;
 
 .header-logo {
   text-align: left;
-  border: 1px dashed black;
   margin: 10px 0;
   padding: 5px 0;
   align-content: center;
@@ -135,7 +148,6 @@ display: flex;
 
 .header-login {
   text-align: right;
-  border: 1px dashed black;
   margin: 10px 0;
   padding: 5px 0;
   align-content: center;
@@ -144,18 +156,13 @@ display: flex;
 .bootstrap {
   text-align: center;
   padding: 100px 0;
-  background-color: #00018a;
   background-image: url(../img/jumbo.png);
   background-size: cover;
 }
 
-.bootstrap .hero {
-  border: 2px dashed black;
-}
-
 /* MAIN */
 .page-content > section * {
-  padding: 50px 0;
+  padding: 20px 10px;
 }
 
 .page-content > section:nth-child(odd) {
@@ -170,20 +177,9 @@ display: flex;
   flex-direction: row-reverse;
 }
 
-.page-content .col-60 {
-  min-height: 400px;
-  background-color: #1e8ffe;
-}
-
-.page-content .col-40 {
-  min-height: 400px;
-  background-color: #febfc9;
-}
-
 .page-content .large-content {
   background-color: green;
   min-height: 600px;
-  border: 2px dashed black;
 }
 
 /* FOOTER */
@@ -194,16 +190,16 @@ display: flex;
 
 .page-footer .col-30 {
   background-color: #ef807f;
-  border: 2px dashed black;
+
 }
 
 .page-footer .col-70 {
   background-color: #20b2a9;
-  border: 2px dashed black;
+
 }
 
 .page-footer .col-25 {
-  border: 2px dashed white;
+
 }
 
 .page-footer .col-30,
@@ -214,7 +210,7 @@ display: flex;
 
 .footer-top {
   padding-bottom: 30px;
-  border-bottom: 1px solid white;
+
 }
 
 .footer-bottom {
@@ -224,5 +220,5 @@ display: flex;
 }
 
 .footer-bottom > * {
-  border: 1px dashed black;
+
 }
