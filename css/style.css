@@ -1,0 +1,228 @@
+    /* GENERALI */
+
+* {
+    margin: 0; /* Rimuove i margini predefiniti */
+    padding: 0; /* Rimuove il padding predefinito */
+    box-sizing: border-box; /* Include il padding e i bordi nelle dimensioni degli elementi */
+  }
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+p {
+  padding-top: 20px;
+  text-align: center;
+  line-height: 2;
+}
+
+h1 {
+  padding-top: 80px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+    /* UTILITY */
+
+.debug 
+.debug * {
+  min-height: 50px;
+  padding: 5px;
+  border: 2px dished #ff0000;
+  background-color: rgba(168, 30, 30, 0.5);
+}
+
+.container {
+  max-width: 1100px; /* Larghezza massima */
+  margin: 0 auto; /* Centra il contenitore */
+  padding: 0 10px;
+}
+
+.container.container-xs {
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+}
+
+.row > div {
+  border: 1px dashed black;
+}
+
+.col-70 {
+  width: 70%;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 30%;
+  padding: 10px;
+  border-color: white;
+  margin-top: 10px;
+}
+ 
+.button-violet {
+  background-color: rgb(134, 129, 202);
+  border-color: rgb(134, 129, 202);
+  color: white;
+}
+
+.button-black {
+  background-color: black;
+  border-color: black;
+  color: white;
+  margin-left: 15px;
+}
+
+.button-xs {
+  font-size: 0.8rem;
+}
+  
+    /* HEADER */
+.page-header {
+  background-color: #255ee7;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-header {
+  margin-bottom: 20px;
+}
+.navbar-header > .container {
+display: flex;
+}
+
+.header-link {
+  text-decoration: none;
+  text-align: center;
+  border: 1px dashed black;
+  margin: 10px 0;
+  padding: 5px 0;
+  flex-grow: 1;
+  align-content: center;
+}
+
+.header-logo {
+  text-align: left;
+  border: 1px dashed black;
+  margin: 10px 0;
+  padding: 5px 0;
+  align-content: center;
+}
+
+.header-login {
+  text-align: right;
+  border: 1px dashed black;
+  margin: 10px 0;
+  padding: 5px 0;
+  align-content: center;
+}
+
+.bootstrap {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #00018a;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+}
+
+.bootstrap .hero {
+  border: 2px dashed black;
+}
+
+/* MAIN */
+.page-content > section * {
+  padding: 50px 0;
+}
+
+.page-content > section:nth-child(odd) {
+  background-color: white;
+}
+
+.page-content > section:nth-child(even) {
+  background-color: #d2d2d2;
+}
+
+.page-content > section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.page-content .col-60 {
+  min-height: 400px;
+  background-color: #1e8ffe;
+}
+
+.page-content .col-40 {
+  min-height: 400px;
+  background-color: #febfc9;
+}
+
+.page-content .large-content {
+  background-color: green;
+  min-height: 600px;
+  border: 2px dashed black;
+}
+
+/* FOOTER */
+.page-footer {
+  background-color: #23272a;
+  padding-top: 0.5rem;
+}
+
+.page-footer .col-30 {
+  background-color: #ef807f;
+  border: 2px dashed black;
+}
+
+.page-footer .col-70 {
+  background-color: #20b2a9;
+  border: 2px dashed black;
+}
+
+.page-footer .col-25 {
+  border: 2px dashed white;
+}
+
+.page-footer .col-30,
+.page-footer .col-70,
+.page-footer .col-25 {
+  min-height: 300px;
+}
+
+.footer-top {
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.footer-bottom {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom > * {
+  border: 1px dashed black;
+}
