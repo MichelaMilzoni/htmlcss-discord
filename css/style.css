@@ -17,23 +17,14 @@ a {
 }
 
 p {
-  padding-top: 20px;
+  padding-top: 0;
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
+  font-size: 17px;
 }
 
 main p {
   text-align: left;
-  padding-top: 20px;
-}
-
-main h2 {
-  text-align: left;
-  font-size: 36px;
-}
-
-h1 {
-  padding-top: 80px;
 }
 
 ul {
@@ -65,21 +56,24 @@ ul {
 }
 
 .col-70,
-.col-60,
 .col-40,
 .col-30,
 .col-25 {
   align-items: center;
 }
 
+.col-60 {
+  align-self: self-start;
+}
+
 button {
   background-color: white;
   color: black;
   font-size: 16px;
-  border-radius: 30%;
-  padding: 10px;
   border-color: white;
   margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 50%;
 }
  
 .button-violet {
@@ -97,10 +91,6 @@ button {
 
 .button-xs {
   font-size: 0.8rem;
-}
-
-main img {
-
 }
   
     /* HEADER */
@@ -149,7 +139,7 @@ main img {
 
 /* MAIN */
 .page-content > section * {
-  padding: 20px 10px;
+  padding: 50px 10px;
 }
 
 .page-content > section:nth-child(odd) {
@@ -160,13 +150,42 @@ main img {
   background-color: #d2d2d2;
 }
 
-.page-content > section:nth-child(even) {
+.page-content > section:nth-child(even) .row {
   flex-direction: row-reverse;
 }
 
-.page-content .large-content {
-  background-color: green;
-  min-height: 600px;
+.large-content > img {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.large-content > img,
+.large-content > h2,
+.large-content > p {
+  width: 100%;
+  height: auto;
+}
+
+main > img {
+  width: 650px;
+  height: auto;
+}
+
+.col-40 > h2 {
+  text-align: left;
+  font-size: 45px;
+  padding-bottom: 30px; 
+}
+h1 {
+padding-top: 80px;
+}
+
+.col-40 {
+
+}
+
+.col-60 {
+
 }
 
 /* FOOTER */
