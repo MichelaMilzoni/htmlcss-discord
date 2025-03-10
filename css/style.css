@@ -62,27 +62,14 @@ ul {
 
 .row {
   display: flex;
-  align-items: center;
 }
 
-.col-70 {
-  width: 70%;
-}
-
-.col-60 {
-
-}
-
-.col-40 {
-
-}
-
-.col-30 {
-  width: 30%;
-}
-
+.col-70,
+.col-60,
+.col-40,
+.col-30,
 .col-25 {
-  width: 25%;
+  align-items: center;
 }
 
 button {
